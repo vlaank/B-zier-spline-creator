@@ -162,7 +162,7 @@ namespace DemoSpline
         {
             if (ShiftX != 0 || ShiftY != 0 || ScaleXY != 1)
             {
-                MessageBox.Show(" Восстановлена исходная \n система координат", "Внимаение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(" Original coordinate \n system restored.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 buttonNaviReset_Click(sender, e);
                 return;
             }
@@ -173,7 +173,7 @@ namespace DemoSpline
             int y = e.Location.Y;
             if(!Spline.search(new Points((double)x, (double)(h - y))))
                  Spline.add_point(new Points((double)x, (double)(h - y) ));
-            else MessageBox.Show("Невозможно поставить еще одну узел в данную точку", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else MessageBox.Show("Unable to put another node at this point.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             buttonVertexAll.Text = Spline.vertex.Count().ToString();
             checkBoxVertex_CheckedChanged(sender, e);
@@ -183,7 +183,7 @@ namespace DemoSpline
         {
             int pos = -1;
             if(dataGridViewVertex.CurrentRow != null) pos= dataGridViewVertex.CurrentRow.Index;
-            if (pos < 0) { MessageBox.Show(" Выбирите вершину для удаления", "Внимаение", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
+            if (pos < 0) { MessageBox.Show(" Select a vertex to delete.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Warning); return; }
             Spline.remove(pos);
             if (Spline.vertex.Count != 0)
             Spline.calc();
