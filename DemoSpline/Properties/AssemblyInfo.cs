@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 [assembly: NeutralResourcesLanguage("en-EN")]
 [assembly: AssemblyTitle("DemoSpline")]
-[assembly: AssemblyDescription("Bézier curve creation program.")]
+[assembly: AssemblyDescription("Bézier spline creation program.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NSTU->FAMI->PM-51")]
 [assembly: AssemblyProduct("Anokhov V.V.")]

@@ -849,7 +849,7 @@
             this.MinimumSize = new System.Drawing.Size(937, 619);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bézier curve creation";
+            this.Text = "Bézier spline creation";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBoxVertex.ResumeLayout(false);
             this.groupBoxVertex.PerformLayout();
